@@ -1,5 +1,18 @@
-create table patient as select * from comqhx1.patient;
-create table drug as select * from comqhx1.drug;
-create table dose as select * from comqhx1.dose;
+(SELECT pname, SUM(qty)
+FROM patient
+JOIN dose
+ON dose.pno = patient.pno
+where pname LIKE '%o%'
+GROUP BY pname)
 
-select * from comqhx1.patient; 
+UNION pname
+
+(SELECT pname, SUM(qty)
+FROM patient
+JOIN dose
+ON dose.pno = patient.pno
+where pname LIKE '%e%'
+GROUP BY pname)
+
+
+
