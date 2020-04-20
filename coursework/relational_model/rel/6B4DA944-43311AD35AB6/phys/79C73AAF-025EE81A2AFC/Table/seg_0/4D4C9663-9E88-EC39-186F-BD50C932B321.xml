@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="USERLIB" directorySegmentName="seg_0" id="4D4C9663-9E88-EC39-186F-BD50C932B321">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 16:59:39 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<schemaObject>156DB0DF-C0BF-06D6-13BF-EAF5524CEABA</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>FF815100-7806-F119-2C25-40AAC73FDED9</segment>
+<tableSpace>3F52FF89-1975-77C5-0D7D-B9A0B1E52593</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NAME" id="35CD711F-5505-0856-9602-F5975ECDD23C">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 16:59:39 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USERID" id="BCB04AD6-E08D-8B7E-AECF-77CC431B3D68">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 16:59:39 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL" id="E35E53BC-1A1A-2E9B-0480-BBC61EE61505">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 16:59:39 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TELEPHONE" id="FF9786A3-60B2-1EE4-2180-C82BAA927807">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 16:59:39 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_USER" id="4FCD302B-1610-3859-3910-AE97D3DD9517">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 16:59:40 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<schemaObject>156DB0DF-C0BF-06D6-13BF-EAF5524CEABA</schemaObject>
+<segment>BC08897D-162B-0554-6590-254820C55173</segment>
+<tableSpace>3F52FF89-1975-77C5-0D7D-B9A0B1E52593</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_USER" id="2EEB8143-3978-4C87-E5B6-1EBF39041257">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 16:59:40 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<segment>BC08897D-162B-0554-6590-254820C55173</segment>
+<tableSpace>3F52FF89-1975-77C5-0D7D-B9A0B1E52593</tableSpace>
+<existingIndex>4FCD302B-1610-3859-3910-AE97D3DD9517</existingIndex>
+<indexSegment>BC08897D-162B-0554-6590-254820C55173</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

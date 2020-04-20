@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogical" name="Logical" id="2ADBECF3-4DAB-7DE1-9507-C3C39E3C2DB7">
+<createdBy>macbook</createdBy>
+<modifiedBy>macbook</modifiedBy>
+<createdTime>2020-04-20 13:45:09 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<displays>
+<Display class="oracle.dbtools.crest.swingui.logical.DPVLogical" name="Display_1" id="824294E4-3C44-6890-D50F-C7C74695F6A7">
+<createdBy>macbook</createdBy>
+<modifiedBy>macbook</modifiedBy>
+<createdTime>2020-04-20 14:24:38 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>true</display>
+<notation>1</notation>
+</Display>
+</displays>
+</Diagram>

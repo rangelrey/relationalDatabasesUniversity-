@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9FB716D5-A136-7DD2-71B2-FA14C96D2ED1" schemaObject="156DB0DF-C0BF-06D6-13BF-EAF5524CEABA" name="BOOK">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>RR19ABM</sourceObjSchema>
+<sourceObjName>BOOK</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 16:59:30 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ISBN" id="77E5B4CD-2D42-CC5D-9054-5C1233E6C4FC">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>BOOK</sourceObjSchema>
+<sourceObjName>ISBN</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 16:59:30 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<constraintName>LIMITISBNTO13</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(isbn)=13"/>
+<implementationDef dbType="Oracle Database 12cR2" definition="length(isbn)=13"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTHOR" id="684BC85D-686C-D9D6-2FC6-582FBEBE8BD8">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>BOOK</sourceObjSchema>
+<sourceObjName>AUTHOR</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 16:59:30 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TITLE" id="B06F605F-819B-ED61-5B5D-82B0113D8C16">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>BOOK</sourceObjSchema>
+<sourceObjName>TITLE</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 16:59:30 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PUBLISHER" id="502505AD-1163-58D3-DFCB-635E1C05CA7C">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>BOOK</sourceObjSchema>
+<sourceObjName>PUBLISHER</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 16:59:30 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATEOFPUBLICATION" id="5EC5F172-36C6-E801-7D67-221A3C35693C">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>BOOK</sourceObjSchema>
+<sourceObjName>DATEOFPUBLICATION</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 16:59:30 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8C6FBD5F-9AD2-D37F-E380-BE7C2FF72290" name="PK_BOOK">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>RR19ABM</sourceObjSchema>
+<sourceObjName>PK_BOOK</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 16:59:31 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77E5B4CD-2D42-CC5D-9054-5C1233E6C4FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="984619E2-E291-3209-ECA5-72A068A8100E" schemaObject="156DB0DF-C0BF-06D6-13BF-EAF5524CEABA" name="PK_BOOK">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>RR19ABM</sourceObjSchema>
+<sourceObjName>PK_BOOK</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 16:59:30 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77E5B4CD-2D42-CC5D-9054-5C1233E6C4FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

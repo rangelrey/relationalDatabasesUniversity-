@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C6A7F6F3-5BB2-7E5A-954E-9549DC57FEA7" schemaObject="156DB0DF-C0BF-06D6-13BF-EAF5524CEABA" name="LOAN">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>RR19ABM</sourceObjSchema>
+<sourceObjName>LOAN</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 17:31:40 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LOANID" id="392D46B5-A860-7B3A-3AC7-B0A108380524">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>LOAN</sourceObjSchema>
+<sourceObjName>LOANID</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 17:31:40 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BARCODE" id="C6D6589F-FAC5-C486-FAFA-C50A4C125C4C">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>LOAN</sourceObjSchema>
+<sourceObjName>BARCODE</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 17:31:40 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BD7B84A7-007B-60E6-738B-ACC04DDFFE6A" referredColumn="F81788A4-29B4-9A7B-0EF6-497F2D7E64CC"/>
+</associations>
+</Column>
+<Column name="ISSUEDATE" id="7D856408-87C5-892E-1EC8-5F9C51C2BB8B">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>LOAN</sourceObjSchema>
+<sourceObjName>ISSUEDATE</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 17:31:40 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OVERDUEDATE" id="B856D788-766D-6ACA-9292-2007050BAB9B">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>LOAN</sourceObjSchema>
+<sourceObjName>OVERDUEDATE</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 17:31:40 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USERID" id="A7C5C229-AB00-D297-0F26-4824E94B7AE5">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>LOAN</sourceObjSchema>
+<sourceObjName>USERID</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 17:31:40 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A054CF91-8C84-F0BD-2B65-03C3F6771371" referredColumn="BCB04AD6-E08D-8B7E-AECF-77CC431B3D68"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5ECE1014-E00D-79C0-88E6-7204222E360F" name="PK_LOAN">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>RR19ABM</sourceObjSchema>
+<sourceObjName>PK_LOAN</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 17:31:41 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="392D46B5-A860-7B3A-3AC7-B0A108380524"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="00969BAC-0015-E53D-A343-45C8B687927F" schemaObject="156DB0DF-C0BF-06D6-13BF-EAF5524CEABA" name="PK_LOAN">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>RR19ABM</sourceObjSchema>
+<sourceObjName>PK_LOAN</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 17:31:40 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="392D46B5-A860-7B3A-3AC7-B0A108380524"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC11BC0C-31A9-A165-9BBD-5A956A9BA243" name="FK_BARCODE_LOAN">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 17:31:41 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6D6589F-FAC5-C486-FAFA-C50A4C125C4C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="755B0008-E7C9-E868-01B4-71D3411569B6" name="FK_USERID_LOAN">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 17:31:41 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7C5C229-AB00-D297-0F26-4824E94B7AE5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

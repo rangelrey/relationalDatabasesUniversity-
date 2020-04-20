@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="RR19ABM" directorySegmentName="seg_0" id="8082A5D9-6D4F-90E3-34E0-6661066632EF">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjName>RR19ABM</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 16:58:59 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<schemaObject>156DB0DF-C0BF-06D6-13BF-EAF5524CEABA</schemaObject>
+<defTableSpace>3F52FF89-1975-77C5-0D7D-B9A0B1E52593</defTableSpace>
+<privileges>CREATE MATERIALIZED VIEW, CREATE VIEW, CREATE DATABASE LINK</privileges>
+<quotaItems>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem1" id="9F693EDF-888C-D621-3DB2-59B00794B96A">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 16:58:59 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<size>7340032</size>
+</QuotaItem>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem2" id="08A08976-1B5B-BBB2-B112-7A821304713A">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 16:59:29 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<size>7340032</size>
+<tableSpace>3F52FF89-1975-77C5-0D7D-B9A0B1E52593</tableSpace>
+</QuotaItem>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem3" id="A99D60BD-DA6E-4790-93C0-E227385AE9CE">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 16:59:39 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<size>7340032</size>
+<tableSpace>3F52FF89-1975-77C5-0D7D-B9A0B1E52593</tableSpace>
+</QuotaItem>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem4" id="D04C5E62-B957-DB9C-EA6C-846541D088AD">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 17:00:20 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<size>7340032</size>
+<tableSpace>3F52FF89-1975-77C5-0D7D-B9A0B1E52593</tableSpace>
+</QuotaItem>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem5" id="D62FC0D5-1991-FCEC-FD2B-DBC43E251B1B">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 17:00:32 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<size>7340032</size>
+<tableSpace>3F52FF89-1975-77C5-0D7D-B9A0B1E52593</tableSpace>
+</QuotaItem>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem6" id="11845BD0-84FE-874F-C946-611215550EA3">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 17:00:42 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<size>7340032</size>
+<tableSpace>3F52FF89-1975-77C5-0D7D-B9A0B1E52593</tableSpace>
+</QuotaItem>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem7" id="88C4BD61-1567-1ECF-69D6-141EFFF08B7F">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 17:28:45 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<size>7340032</size>
+<tableSpace>3F52FF89-1975-77C5-0D7D-B9A0B1E52593</tableSpace>
+</QuotaItem>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem8" id="EB48A8FA-59B1-F8CC-255C-3D2EEABF76F3">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 17:31:39 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<size>7340032</size>
+<tableSpace>3F52FF89-1975-77C5-0D7D-B9A0B1E52593</tableSpace>
+</QuotaItem>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem9" id="4FDB7F5F-B44A-9A42-C2EE-DFF9C9B2ADDB">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-20 17:54:37 UTC</createdTime>
+<ownerDesignName>relational_model</ownerDesignName>
+<size>7340032</size>
+<tableSpace>3F52FF89-1975-77C5-0D7D-B9A0B1E52593</tableSpace>
+</QuotaItem>
+</quotaItems>
+</UserOraclev10g>
