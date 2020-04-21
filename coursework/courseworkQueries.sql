@@ -2,6 +2,7 @@ drop table book;
 drop table reservation;
 drop table loan;
 drop table userlib;
+drop table bookcopy;
 
 /*Create the book table */
 CREATE TABLE book (
@@ -115,51 +116,42 @@ INTO bookCopy  values (1115 ,1000000000015, 1)
 SELECT * FROM dual;
 
 
-/*
+
 CREATE TABLE loan (
-barCode NUMBER,
+barCode NUMBER NOT NULL,
 issueDate DATE NOT NULL,
 overdueDate DATE,
 userId NUMBER NOT NULL,
+CONSTRAINT noMoreThan30 
+        CHECK (NOT EXISTS (SELECT userId 
+        FROM loan
+        GROUP BY userId
+        HAVING COUNT(*)>20)),
+                                              
 CONSTRAINT fk_barCode_loan FOREIGN KEY (barCode) REFERENCES bookCopy(barCode),
 CONSTRAINT fk_userId_loan FOREIGN KEY (userId) REFERENCES userLib(userId),
 CONSTRAINT pk_loan PRIMARY KEY (barCode,issueDate));
 /*Insert data into the user table */
-
-
-/*create loan table */
-
-CREATE TABLE loan (
-loanId NUMBER,
-barCode NUMBER,
-issueDate DATE NOT NULL,
-overdueDate DATE,
-userId NUMBER NOT NULL,
-CONSTRAINT fk_barCode_loan FOREIGN KEY (barCode) REFERENCES bookCopy(barCode),
-CONSTRAINT fk_userId_loan FOREIGN KEY (userId) REFERENCES userLib(userId),
-CONSTRAINT pk_loan PRIMARY KEY (loanId));
-/*Insert data into the user table */
-
 INSERT ALL
-INTO loan  values (1401, '01-Feb-2007', '02-Feb-2007', 11111101)
-INTO loan  values (1202, '01-Feb-2007', '02-Feb-2007', 11111102)
-INTO loan  values (1302, '01-Feb-2007', '02-Feb-2007', 11111103)
-INTO loan  values (1105, '01-Feb-2007', '02-Feb-2007', 11111104)
-INTO loan  values (1205, '01-Feb-2007', '02-Feb-2007', 11111105)
-INTO loan  values (1305, '01-Feb-2007', '02-Feb-2007', 11111106)
+INTO loan  values ( 1401, '01-Feb-2007', '02-Feb-2007', 11111101)
+INTO loan  values ( 1202, '01-Feb-2007', '02-Feb-2007', 11111101)
+INTO loan  values ( 1302, '01-Feb-2007', '02-Feb-2007', 11111103)
+INTO loan  values ( 1105, '01-Feb-2007', '02-Feb-2007', 11111104)
+INTO loan  values ( 1205, '01-Feb-2007', '02-Feb-2007', 11111105)
+INTO loan  values ( 1305, '01-Feb-2007', '02-Feb-2007', 11111106)
 
 SELECT * FROM dual;
+
 
 /*create reservation table */
 
 CREATE TABLE reservation (
-reservationId NUMBER,
-barCode NUMBER,
+barCode NUMBER NOT NULL,
 reservationDate DATE NOT NULL,
-userId NUMBER,
+userId NUMBER NOT NULL,
 CONSTRAINT fk_barCode_reservation FOREIGN KEY (barCode) REFERENCES bookCopy(barCode),
 CONSTRAINT fk_userId_reservation FOREIGN KEY (userId) REFERENCES userLib(userId),
-CONSTRAINT pk_reservation PRIMARY KEY (reservationId));
+CONSTRAINT pk_reservation PRIMARY KEY (barCode, reservationDate, userId));
 /*Insert data into the reservation table */
 
 INSERT ALL
@@ -169,6 +161,46 @@ INTO reservation  values (1302, '05-Feb-2007', 11111108)
 INTO reservation  values (1205, '06-Feb-2007', 11111109)
 INTO reservation  values (1305, '07-Feb-2007', 11111110)
 SELECT * FROM dual;
+
+
+/*TASK 4 - Queries */
+/* Search for a book by key words in book title and display all details of the book.
+You should allow two key words in the query */
+SELECT *
+from book
+where title LIKE '%Introduction%' OR title LIKE '%Advanced%';
+
+/* Search for a book by author and display all details of the book. You should allow
+partial matching of authors’ names */
+SELECT * 
+from book
+where author LIKE '%Anthony%' OR title LIKE '%M%';
+
+/* Search for a book by ISBN and display if it is available for loan */
+
+SELECT bc.isbn, b.title
+from bookcopy bc
+left join book b
+on bc.isbn = b.isbn
+where bc.isbn = 1000000000002 and bc.available = 1;
+
+/*Make a reservation for a book (i.e., to record which book is being reserved by
+which user on a given date). */
+
+INSERT INTO reservation
+values(1401,'16-Apr-2020',11111110);
+
+/* Produce a list of loans to users: display user name, user ID, book title and bar
+codes for those books on loan */
+
+SELECT u.name, u.userId, b.title, l.barCode
+from loan l
+left join userLib u on (l.userId = u.userId)
+left join bookCopy bc on (bc.barCode = l.barCode)
+left join book b on (bc.isbn = b.isbn)
+where bc.available = 0;
+
+
 
 
 
