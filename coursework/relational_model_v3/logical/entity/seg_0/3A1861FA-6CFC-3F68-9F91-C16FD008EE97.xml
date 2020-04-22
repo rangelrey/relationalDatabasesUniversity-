@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3A1861FA-6CFC-3F68-9F91-C16FD008EE97" name="RESERVATION">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 05:45:03 UTC</createdTime>
+<generatorID>979FA412-E095-B9B4-C2A3-0884E40255E9</generatorID>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<engineerTo>
+<item key="59D964B4-7955-5786-66DE-7BE64A7747DE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="BARCODE" id="829DD83A-993A-82B1-30DC-DB511A79ED6D">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 05:45:03 UTC</createdTime>
+<generatorID>5F03F3A7-9243-399C-B093-E90D43F7A270</generatorID>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<engineerTo>
+<item key="59D964B4-7955-5786-66DE-7BE64A7747DE" value="true"/>
+</engineerTo>
+<referedAttribute>60DC9A81-A6D3-1BBE-C713-3DF4FD53A207</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RESERVATIONDATE" id="5A70A9D4-EF93-DAFC-DEE7-317B935E70CD">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 05:45:03 UTC</createdTime>
+<generatorID>2C4EF943-034F-17A0-CF2E-7518161946E1</generatorID>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<engineerTo>
+<item key="59D964B4-7955-5786-66DE-7BE64A7747DE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="USERID" id="CF43BA77-C2EA-3EBA-BBCF-7635C3BBA22D">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 05:45:03 UTC</createdTime>
+<generatorID>48D66EB3-F168-C758-AE7E-F303945E0234</generatorID>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<engineerTo>
+<item key="59D964B4-7955-5786-66DE-7BE64A7747DE" value="true"/>
+</engineerTo>
+<referedAttribute>FF904F87-07E8-418F-2255-8E679E75A93C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B7B4DFA0-935F-1442-7A7A-70AE9FA51CC7" name="PK RESERVATION">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 05:45:03 UTC</createdTime>
+<generatorID>A152EA98-1297-0596-ABDC-C0D86588FD8F</generatorID>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<engineerTo>
+<item key="59D964B4-7955-5786-66DE-7BE64A7747DE" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>829DD83A-993A-82B1-30DC-DB511A79ED6D</attributeRef>
+<attributeRef>5A70A9D4-EF93-DAFC-DEE7-317B935E70CD</attributeRef>
+<attributeRef>CF43BA77-C2EA-3EBA-BBCF-7635C3BBA22D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7329D51E-3DE1-59CD-4F2A-1DE7B1FDD587" schemaObject="037D544B-1BF4-20AD-F163-5360D4730B94" name="RESERVATION">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>RR19ABM</sourceObjSchema>
+<sourceObjName>RESERVATION</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 07:11:47 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BARCODE" id="1FDCB072-4422-DF99-CF08-934E4221E2B7">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>RESERVATION</sourceObjSchema>
+<sourceObjName>BARCODE</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 07:11:47 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3652BECC-4217-11DB-D275-97314EFE468C" referredColumn="3756AA80-9C62-2C2D-E2C9-04D81A4A81B9"/>
+</associations>
+</Column>
+<Column name="RESERVATIONDATE" id="F32C3D41-6C77-1F7C-C3D4-AA06BA66D692">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>RESERVATION</sourceObjSchema>
+<sourceObjName>RESERVATIONDATE</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 07:11:47 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USERID" id="66F1E67E-E4CC-8827-F6DB-B7DC417D0F01">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>RESERVATION</sourceObjSchema>
+<sourceObjName>USERID</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 07:11:47 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4AD1B24E-9149-78D0-0204-2BA5765D7BA8" referredColumn="D682A5DB-F1E9-5073-C4F5-C939D7031B62"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B551CBB3-35BA-9A69-2F80-6E636519054D" name="PK_RESERVATION">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>RR19ABM</sourceObjSchema>
+<sourceObjName>PK_RESERVATION</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 07:11:48 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1FDCB072-4422-DF99-CF08-934E4221E2B7"/>
+<colUsage columnID="F32C3D41-6C77-1F7C-C3D4-AA06BA66D692"/>
+<colUsage columnID="66F1E67E-E4CC-8827-F6DB-B7DC417D0F01"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CEFC75A-1254-6E59-E3A6-D277CC6DD5D4" schemaObject="037D544B-1BF4-20AD-F163-5360D4730B94" name="PK_RESERVATION">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>RR19ABM</sourceObjSchema>
+<sourceObjName>PK_RESERVATION</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 07:11:47 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1FDCB072-4422-DF99-CF08-934E4221E2B7"/>
+<colUsage columnID="F32C3D41-6C77-1F7C-C3D4-AA06BA66D692"/>
+<colUsage columnID="66F1E67E-E4CC-8827-F6DB-B7DC417D0F01"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07FFAD6D-B0C5-6F5A-9DF9-B78EFDE81B56" name="FK_BARCODE_RESERVATION">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 07:11:48 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1FDCB072-4422-DF99-CF08-934E4221E2B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1D2AF39-83F3-E194-7D6B-0A7122E31E3F" name="FK_USERID_RESERVATION">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 07:11:48 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66F1E67E-E4CC-8827-F6DB-B7DC417D0F01"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

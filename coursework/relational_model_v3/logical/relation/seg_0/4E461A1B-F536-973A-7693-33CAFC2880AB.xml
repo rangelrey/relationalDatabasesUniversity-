@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_BARCODE_LOAN" directorySegmentName="seg_0" id="4E461A1B-F536-973A-7693-33CAFC2880AB">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 05:45:03 UTC</createdTime>
+<generatorID>C061720C-C93F-E855-04C6-5E318326621C</generatorID>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<engineerTo>
+<item key="59D964B4-7955-5786-66DE-7BE64A7747DE" value="true"/>
+</engineerTo>
+<sourcePk>D272A3FC-8A78-544B-B40F-8C8D32272585</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>13BD36A9-3803-1616-2543-F5DCE3FC9EF0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>11F593F9-6A60-6A84-6F53-5AC7D76F308B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

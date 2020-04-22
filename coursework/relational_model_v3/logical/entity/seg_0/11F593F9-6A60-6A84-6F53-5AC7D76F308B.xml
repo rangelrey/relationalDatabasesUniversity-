@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="11F593F9-6A60-6A84-6F53-5AC7D76F308B" name="LOAN">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 05:45:03 UTC</createdTime>
+<generatorID>6A8396CF-271E-98E1-A686-5CF73F2D8548</generatorID>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<engineerTo>
+<item key="59D964B4-7955-5786-66DE-7BE64A7747DE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="BARCODE" id="FCEE187B-DA73-5263-F93C-561343186635">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 05:45:03 UTC</createdTime>
+<generatorID>4E461A1B-F536-973A-7693-33CAFC2880AB</generatorID>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<engineerTo>
+<item key="59D964B4-7955-5786-66DE-7BE64A7747DE" value="true"/>
+</engineerTo>
+<referedAttribute>60DC9A81-A6D3-1BBE-C713-3DF4FD53A207</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ISSUEDATE" id="0E96A193-2935-4A11-F494-69AABDBFFED8">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 05:45:03 UTC</createdTime>
+<generatorID>D2D5BD3D-D855-B1D0-1ACD-4A0D56A578C0</generatorID>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<engineerTo>
+<item key="59D964B4-7955-5786-66DE-7BE64A7747DE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OVERDUEDATE" id="E1EC873A-B2F9-98AD-2FE6-AEAF14D495AC">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 05:45:03 UTC</createdTime>
+<generatorID>403B07B0-7CE2-F277-7827-953A4A3CB097</generatorID>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<engineerTo>
+<item key="59D964B4-7955-5786-66DE-7BE64A7747DE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="USERID" id="D8E80DCF-1ACC-DB68-9495-13DB988E808C">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 05:45:03 UTC</createdTime>
+<generatorID>600C2AF3-7D7D-2AB5-AA65-971CB3D972E3</generatorID>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<engineerTo>
+<item key="59D964B4-7955-5786-66DE-7BE64A7747DE" value="true"/>
+</engineerTo>
+<referedAttribute>FF904F87-07E8-418F-2255-8E679E75A93C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="67258E50-E359-8E37-DCF3-A0099436DBE0" name="PK LOAN">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 05:45:03 UTC</createdTime>
+<generatorID>458B9D90-496A-29B8-E5CA-06A06A80EBEA</generatorID>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<engineerTo>
+<item key="59D964B4-7955-5786-66DE-7BE64A7747DE" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FCEE187B-DA73-5263-F93C-561343186635</attributeRef>
+<attributeRef>0E96A193-2935-4A11-F494-69AABDBFFED8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

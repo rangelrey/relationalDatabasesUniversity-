@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="RR19ABM" directorySegmentName="seg_0" id="3AC0127E-4221-E868-2B51-F1D67BCA175C">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjName>RR19ABM</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 07:11:33 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<schemaObject>037D544B-1BF4-20AD-F163-5360D4730B94</schemaObject>
+<defTableSpace>1E0C405F-F813-A88F-8A95-FFEBEB8DE241</defTableSpace>
+<privileges>CREATE MATERIALIZED VIEW, CREATE VIEW, CREATE DATABASE LINK</privileges>
+<quotaItems>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem1" id="023F4766-61C0-0CD6-2AB9-DB25F79379EC">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 07:11:33 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<size>7340032</size>
+</QuotaItem>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem2" id="85856A13-2A35-E8E9-3D56-3B8145BB559E">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 07:11:36 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<size>7340032</size>
+<tableSpace>1E0C405F-F813-A88F-8A95-FFEBEB8DE241</tableSpace>
+</QuotaItem>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem3" id="FEFD102B-FECC-6F4C-5743-6CDB0AC7F085">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 07:11:43 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<size>7340032</size>
+<tableSpace>1E0C405F-F813-A88F-8A95-FFEBEB8DE241</tableSpace>
+</QuotaItem>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem4" id="489A0CB2-012F-CDCC-B40E-4C417C21AF96">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 07:11:47 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<size>7340032</size>
+<tableSpace>1E0C405F-F813-A88F-8A95-FFEBEB8DE241</tableSpace>
+</QuotaItem>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem5" id="68432636-2D5D-56D8-59C4-281191EF3515">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 07:11:53 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<size>7340032</size>
+<tableSpace>1E0C405F-F813-A88F-8A95-FFEBEB8DE241</tableSpace>
+</QuotaItem>
+</quotaItems>
+</UserOraclev10g>

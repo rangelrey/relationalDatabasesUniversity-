@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="relational_model_v3" id="2A28E590-139F-862B-5FD4-6E7AAE632715" version="3.5">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 05:39:36 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>2A28E590-139F-862B-5FD4-6E7AAE632715</designId>
+</OSDM_Design>

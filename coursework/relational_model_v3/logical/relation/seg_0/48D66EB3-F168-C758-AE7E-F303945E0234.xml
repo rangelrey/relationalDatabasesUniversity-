@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_USERID_RESERVATION" directorySegmentName="seg_0" id="48D66EB3-F168-C758-AE7E-F303945E0234">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 05:45:03 UTC</createdTime>
+<generatorID>33D71971-6B7C-8E7E-825A-029732512394</generatorID>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<engineerTo>
+<item key="59D964B4-7955-5786-66DE-7BE64A7747DE" value="true"/>
+</engineerTo>
+<sourcePk>D4929925-AF21-E7BC-43C7-5A35482499EB</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1ADD7CBD-7051-C131-F024-3E409B852F60</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3A1861FA-6CFC-3F68-9F91-C16FD008EE97</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

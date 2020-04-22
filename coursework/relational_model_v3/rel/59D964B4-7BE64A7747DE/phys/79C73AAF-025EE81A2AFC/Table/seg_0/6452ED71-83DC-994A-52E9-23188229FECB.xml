@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="BOOKCOPY" directorySegmentName="seg_0" id="6452ED71-83DC-994A-52E9-23188229FECB">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 07:11:36 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<schemaObject>037D544B-1BF4-20AD-F163-5360D4730B94</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>95347088-6E9C-10BD-4D10-3CD4437C2EF9</segment>
+<tableSpace>1E0C405F-F813-A88F-8A95-FFEBEB8DE241</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="BARCODE" id="3756AA80-9C62-2C2D-E2C9-04D81A4A81B9">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 07:11:36 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ISBN" id="3C262E7D-C956-0496-1753-86490B186EB6">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 07:11:36 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AVAILABLE" id="D0C0DB57-6D92-7985-7964-454B10071F9F">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 07:11:36 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_BOOKCOPY" id="34055B15-A6B1-CEE1-5F7F-C7C8E939D137">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 07:11:36 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<schemaObject>037D544B-1BF4-20AD-F163-5360D4730B94</schemaObject>
+<segment>B36E44B1-9D0E-B2B0-1034-F68A593C17BE</segment>
+<tableSpace>1E0C405F-F813-A88F-8A95-FFEBEB8DE241</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_BOOKCOPY" id="476DD090-1541-B0FF-5D13-994ABB4B830A">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 07:11:36 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_BOOKCOPY" id="42EA1387-98CA-CB93-B1F7-4F48CA03037D">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 07:11:36 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<segment>B36E44B1-9D0E-B2B0-1034-F68A593C17BE</segment>
+<tableSpace>1E0C405F-F813-A88F-8A95-FFEBEB8DE241</tableSpace>
+<existingIndex>34055B15-A6B1-CEE1-5F7F-C7C8E939D137</existingIndex>
+<indexSegment>B36E44B1-9D0E-B2B0-1034-F68A593C17BE</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

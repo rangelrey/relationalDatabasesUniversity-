@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DD3E7029-63F3-C43E-973A-80E0408A451C" containerWithKeyObject="D9526240-3BDD-8F2F-CBD5-345A03A60B7D" localFKIndex="62E2CB12-36F8-31D1-862D-86443149F864" name="FK_USERID_LOAN">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>RR19ABM</sourceObjSchema>
+<sourceObjName>FK_USERID_LOAN</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 07:11:44 UTC</createdTime>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<referredTableLongName>RR19ABM.USERLIB</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>38C430F4-9155-D0E6-9B88-3747C21DF913</referredTableID>
+<keyObject>9CEF144A-7A11-A46D-EF31-238E8B130D1B</keyObject>
+<referredKeyID>9CEF144A-7A11-A46D-EF31-238E8B130D1B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>USERID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_USERID_LOAN" directorySegmentName="seg_0" id="600C2AF3-7D7D-2AB5-AA65-971CB3D972E3">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-22 05:45:03 UTC</createdTime>
+<generatorID>9485919F-676A-BD1E-EFE8-81F754A07792</generatorID>
+<ownerDesignName>relational_model_v3</ownerDesignName>
+<engineerTo>
+<item key="59D964B4-7955-5786-66DE-7BE64A7747DE" value="true"/>
+</engineerTo>
+<sourcePk>D4929925-AF21-E7BC-43C7-5A35482499EB</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1ADD7CBD-7051-C131-F024-3E409B852F60</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>11F593F9-6A60-6A84-6F53-5AC7D76F308B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
