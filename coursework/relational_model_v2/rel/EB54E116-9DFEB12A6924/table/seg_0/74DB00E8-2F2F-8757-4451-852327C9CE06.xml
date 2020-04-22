@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="74DB00E8-2F2F-8757-4451-852327C9CE06" schemaObject="4391B17C-795A-5A3F-1185-913CFF3568A6" name="USERLIB">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>RR19ABM</sourceObjSchema>
+<sourceObjName>USERLIB</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:52 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USERID" id="4A5B4500-24F3-6ACB-3EA6-4E0B768344A4">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>USERLIB</sourceObjSchema>
+<sourceObjName>USERID</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:53 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<constraintName>LIMITIDTO8</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(userId)=8"/>
+<implementationDef dbType="Oracle Database 12cR2" definition="length(userId)=8"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="44A0CE7C-080A-97C9-0ACE-07CC7D7431C4">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>USERLIB</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:53 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="B1272802-239A-F4BB-6A72-401B131E552C">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>USERLIB</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:53 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEPHONE" id="E56E36AC-265D-9668-A702-50929014CD32">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>USERLIB</sourceObjSchema>
+<sourceObjName>TELEPHONE</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:53 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="04FE1A04-AA2E-B7A2-5030-A2EDCAA92644" name="PK_USER">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>RR19ABM</sourceObjSchema>
+<sourceObjName>PK_USER</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:54 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A5B4500-24F3-6ACB-3EA6-4E0B768344A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D34BF40-C27C-6B84-9E4F-25976A3ACCD9" schemaObject="4391B17C-795A-5A3F-1185-913CFF3568A6" name="PK_USER">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>RR19ABM</sourceObjSchema>
+<sourceObjName>PK_USER</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:53 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A5B4500-24F3-6ACB-3EA6-4E0B768344A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

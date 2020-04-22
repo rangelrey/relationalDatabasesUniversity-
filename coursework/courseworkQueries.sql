@@ -1,8 +1,8 @@
-drop table book;
-drop table reservation;
 drop table loan;
-drop table userlib;
+drop table reservation;
 drop table bookcopy;
+drop table book;
+drop table userlib;
 
 /*Create the book table */
 CREATE TABLE book (
@@ -122,11 +122,6 @@ barCode NUMBER NOT NULL,
 issueDate DATE NOT NULL,
 overdueDate DATE,
 userId NUMBER NOT NULL,
-CONSTRAINT noMoreThan30 
-        CHECK (NOT EXISTS (SELECT userId 
-        FROM loan
-        GROUP BY userId
-        HAVING COUNT(*)>20)),
                                               
 CONSTRAINT fk_barCode_loan FOREIGN KEY (barCode) REFERENCES bookCopy(barCode),
 CONSTRAINT fk_userId_loan FOREIGN KEY (userId) REFERENCES userLib(userId),

@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A6AC1B17-90B3-661D-A393-FF3E83EC61FD" name="BOOK">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:18:02 UTC</createdTime>
+<generatorID>D0158112-3CBF-AEB8-574F-241B34112E3F</generatorID>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<engineerTo>
+<item key="EB54E116-D974-EB48-AE1A-9DFEB12A6924" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ISBN" id="198F5B50-13C5-4732-E95B-BEFF6AE6E18E">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:18:02 UTC</createdTime>
+<generatorID>B385D098-C96E-3F70-FF29-DBD12D6256E2</generatorID>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<engineerTo>
+<item key="EB54E116-D974-EB48-AE1A-9DFEB12A6924" value="true"/>
+</engineerTo>
+<constraintName>LIMITISBNTO13</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(isbn)=13"/>
+<implementationDef dbType="Oracle Database 12cR2" definition="length(isbn)=13"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AUTHOR" id="D90292C1-4064-CF0E-2638-338A9804BA3E">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:18:02 UTC</createdTime>
+<generatorID>556AAC99-1928-E2A8-C4FD-5231A1B095D7</generatorID>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<engineerTo>
+<item key="EB54E116-D974-EB48-AE1A-9DFEB12A6924" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TITLE" id="D6903EA1-19AB-0843-0668-0941C478CD59">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:18:02 UTC</createdTime>
+<generatorID>BB43466F-27A3-F0B7-9482-706F7661188B</generatorID>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<engineerTo>
+<item key="EB54E116-D974-EB48-AE1A-9DFEB12A6924" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PUBLISHER" id="A07F22F5-BFF6-582A-65B0-1966A4036394">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:18:02 UTC</createdTime>
+<generatorID>DF2AAA11-8A30-B2D3-BFE8-CD1B7BB996FB</generatorID>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<engineerTo>
+<item key="EB54E116-D974-EB48-AE1A-9DFEB12A6924" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATEOFPUBLICATION" id="638AD470-AC76-BD76-782A-DAB774CA7E96">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:18:02 UTC</createdTime>
+<generatorID>5340CF0A-E9BB-D92A-3025-761B2559A77E</generatorID>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<engineerTo>
+<item key="EB54E116-D974-EB48-AE1A-9DFEB12A6924" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="937C9F47-A499-3A38-933C-965E8F86C8D2" name="PK BOOK">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:18:02 UTC</createdTime>
+<generatorID>DEEC707B-BB0E-4263-9B72-86BD06F06FF8</generatorID>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<engineerTo>
+<item key="EB54E116-D974-EB48-AE1A-9DFEB12A6924" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>198F5B50-13C5-4732-E95B-BEFF6AE6E18E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

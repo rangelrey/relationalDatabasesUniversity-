@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSpaceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableSpaceOraclev10g" name="PGRAD" directorySegmentName="seg_0" id="A07991DC-74EC-6125-ADB5-2987DA44EC8A">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>RR19ABM</sourceObjSchema>
+<sourceObjName>PGRAD</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:52 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<emUniformSize>0</emUniformSize>
+<extentManagement>LOCAL</extentManagement>
+</TableSpaceOraclev10g>

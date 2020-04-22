@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C5272D2F-B057-1030-56AE-EA4C85E3BF39" schemaObject="4391B17C-795A-5A3F-1185-913CFF3568A6" name="BOOKCOPY">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>RR19ABM</sourceObjSchema>
+<sourceObjName>BOOKCOPY</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:52 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BARCODE" id="E0CD0E63-1EE8-461D-5B00-D1339BF14F61">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>BOOKCOPY</sourceObjSchema>
+<sourceObjName>BARCODE</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:52 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ISBN" id="A9F8E24D-B767-A29E-E18E-5A22F64CB97F">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>BOOKCOPY</sourceObjSchema>
+<sourceObjName>ISBN</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:52 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<constraintName>LIMITISBNTO13_BOOKCOPY</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(isbn)=13"/>
+<implementationDef dbType="Oracle Database 12cR2" definition="length(isbn)=13"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="35698439-3E8C-B75A-EEBB-94B8870E865C" referredColumn="B385D098-C96E-3F70-FF29-DBD12D6256E2"/>
+</associations>
+</Column>
+<Column name="AVAILABLE" id="E82B9969-EB23-F9AA-64AD-CFAC6D7AF135">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>BOOKCOPY</sourceObjSchema>
+<sourceObjName>AVAILABLE</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:52 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<constraintName>AVAILABLEISBOOLEAN</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<listOfValues>
+<valueDef value="0" description=""/>
+<valueDef value="1" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8D3E947D-4FBD-038B-E0AF-C5BA3FC9BDC4" name="PK_BOOKCOPY">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>RR19ABM</sourceObjSchema>
+<sourceObjName>PK_BOOKCOPY</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:54 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0CD0E63-1EE8-461D-5B00-D1339BF14F61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63A3DFC7-1910-3157-A43C-4AF482DAD4E7" schemaObject="4391B17C-795A-5A3F-1185-913CFF3568A6" name="PK_BOOKCOPY">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>RR19ABM</sourceObjSchema>
+<sourceObjName>PK_BOOKCOPY</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:53 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0CD0E63-1EE8-461D-5B00-D1339BF14F61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="23DA2157-D15D-8F10-0844-23830A7B63BD" name="FK_BOOKCOPY">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:55 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9F8E24D-B767-A29E-E18E-5A22F64CB97F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

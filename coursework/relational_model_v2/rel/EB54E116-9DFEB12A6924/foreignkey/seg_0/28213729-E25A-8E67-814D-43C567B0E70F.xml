@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="28213729-E25A-8E67-814D-43C567B0E70F" containerWithKeyObject="23256382-D96E-3D62-00FD-1B71A91B9626" localFKIndex="346AC51F-959C-2D91-064C-7EF4746909E0" name="FK_BARCODE_RESERVATION">
+<sourceConnName>OConnection</sourceConnName>
+<sourceObjSchema>RR19ABM</sourceObjSchema>
+<sourceObjName>FK_BARCODE_RESERVATION</sourceObjName>
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:55 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<referredTableLongName>RR19ABM.BOOKCOPY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C5272D2F-B057-1030-56AE-EA4C85E3BF39</referredTableID>
+<keyObject>8D3E947D-4FBD-038B-E0AF-C5BA3FC9BDC4</keyObject>
+<referredKeyID>8D3E947D-4FBD-038B-E0AF-C5BA3FC9BDC4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>BARCODE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

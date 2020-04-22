@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="LOAN" directorySegmentName="seg_0" id="7784C951-893F-1B5B-3F2C-731DD0A53EA8">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:52 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<schemaObject>4391B17C-795A-5A3F-1185-913CFF3568A6</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>34D14658-99D5-06CF-5CB6-ABF08425C814</segment>
+<tableSpace>A07991DC-74EC-6125-ADB5-2987DA44EC8A</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="OVERDUEDATE" id="9954860E-62E9-2BE3-109C-9B80CD15E2D5">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:52 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BARCODE" id="C0BA46C4-5030-9DFB-2F45-B61BEC077C0A">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:52 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USERID" id="EE68E49E-AB26-552E-B875-F76FA3B0EC33">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:52 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ISSUEDATE" id="F009415B-27FC-5503-1B05-ED8DF6B9142C">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:52 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_LOAN" id="5ED43593-AA87-54C7-3DCA-9C551033D491">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:53 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<schemaObject>4391B17C-795A-5A3F-1185-913CFF3568A6</schemaObject>
+<segment>CBBBE3CC-1996-1DDF-E067-FA274FBF84D1</segment>
+<tableSpace>A07991DC-74EC-6125-ADB5-2987DA44EC8A</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_BARCODE_LOAN" id="19EE0BFC-249E-A6D8-54D1-6B8232313F92">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:55 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_USERID_LOAN" id="3BAC0DBF-7FD8-D794-5627-EFB2A420E0BB">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:55 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_LOAN" id="F03AC49C-6D68-6F19-D4E7-5D5BDF19D133">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:16:54 UTC</createdTime>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<segment>CBBBE3CC-1996-1DDF-E067-FA274FBF84D1</segment>
+<tableSpace>A07991DC-74EC-6125-ADB5-2987DA44EC8A</tableSpace>
+<existingIndex>5ED43593-AA87-54C7-3DCA-9C551033D491</existingIndex>
+<indexSegment>CBBBE3CC-1996-1DDF-E067-FA274FBF84D1</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

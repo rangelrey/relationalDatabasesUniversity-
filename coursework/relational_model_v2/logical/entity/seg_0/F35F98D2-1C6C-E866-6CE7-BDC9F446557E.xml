@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F35F98D2-1C6C-E866-6CE7-BDC9F446557E" name="USERLIB">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:18:02 UTC</createdTime>
+<generatorID>74DB00E8-2F2F-8757-4451-852327C9CE06</generatorID>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<engineerTo>
+<item key="EB54E116-D974-EB48-AE1A-9DFEB12A6924" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="USERID" id="96240CCE-6709-BC75-B457-88B3DB9E50DA">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:18:02 UTC</createdTime>
+<generatorID>4A5B4500-24F3-6ACB-3EA6-4E0B768344A4</generatorID>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<engineerTo>
+<item key="EB54E116-D974-EB48-AE1A-9DFEB12A6924" value="true"/>
+</engineerTo>
+<constraintName>LIMITIDTO8</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(userId)=8"/>
+<implementationDef dbType="Oracle Database 12cR2" definition="length(userId)=8"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NAME" id="5C0C996A-0AC8-ABFA-E695-F472E258FF2C">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:18:02 UTC</createdTime>
+<generatorID>44A0CE7C-080A-97C9-0ACE-07CC7D7431C4</generatorID>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<engineerTo>
+<item key="EB54E116-D974-EB48-AE1A-9DFEB12A6924" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMAIL" id="92D34215-8367-913D-7526-29306DC1E66C">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:18:02 UTC</createdTime>
+<generatorID>B1272802-239A-F4BB-6A72-401B131E552C</generatorID>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<engineerTo>
+<item key="EB54E116-D974-EB48-AE1A-9DFEB12A6924" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TELEPHONE" id="4C9D553E-11F7-F14C-14C8-00E66C3334F8">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:18:02 UTC</createdTime>
+<generatorID>E56E36AC-265D-9668-A702-50929014CD32</generatorID>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<engineerTo>
+<item key="EB54E116-D974-EB48-AE1A-9DFEB12A6924" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F906423D-5F03-C987-611F-6B8F223278B6" name="PK USER">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:18:02 UTC</createdTime>
+<generatorID>04FE1A04-AA2E-B7A2-5030-A2EDCAA92644</generatorID>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<engineerTo>
+<item key="EB54E116-D974-EB48-AE1A-9DFEB12A6924" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>96240CCE-6709-BC75-B457-88B3DB9E50DA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

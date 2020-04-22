@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_BARCODE_RESERVATION" directorySegmentName="seg_0" id="79809939-AA31-57F7-B2F5-730B1C6BC682">
+<createdBy>macbook</createdBy>
+<createdTime>2020-04-21 08:18:02 UTC</createdTime>
+<generatorID>28213729-E25A-8E67-814D-43C567B0E70F</generatorID>
+<ownerDesignName>relational_model_v2</ownerDesignName>
+<engineerTo>
+<item key="EB54E116-D974-EB48-AE1A-9DFEB12A6924" value="true"/>
+</engineerTo>
+<sourcePk>80837F16-CFC1-1C0B-D93B-F1B495823858</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B6376162-41DD-9962-27AE-F94F3A649C25</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0BF0C9A8-302C-7827-D325-51653E425BE3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
