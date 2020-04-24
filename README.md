@@ -1,4 +1,4 @@
-2nd year university cour of the bachelor Computer Science at the University of Hertfordshire.
+2nd year university course of the bachelor Computer Science at the University of Hertfordshire.
 
 Topics covered:
 - Relational Model
