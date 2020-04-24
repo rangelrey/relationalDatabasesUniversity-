@@ -2,6 +2,16 @@
 **/*.local
 **/*.git
 **/*.DS_Store
+/.DS_Store
+/*.DS_Store/
+**/*.DS_Store/
+**/*.DS_Store
+**/.DS_Store/
+**/.DS_Store
+/*.DS_Store
+**/.DS_Store
+**/.DS_Store
+**/*.DS_Store
 **/.DS_Store
 **/.do_pool/**
 **/.do_pool
